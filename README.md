@@ -6,10 +6,19 @@ A collection of Model Context Protocol (MCP) service configurations for quick se
 
 ## Table of Contents
 
-- [Available Services](#available-services)
-- [Configuration Guide](#configuration-guide)
-- [How to Use](#how-to-use)
-- [How to Contribute](#how-to-contribute)
+- [Awesome MCP Scheme](#awesome-mcp-scheme)
+  - [Table of Contents](#table-of-contents)
+  - [Available Services](#available-services)
+    - [Filesystem](#filesystem)
+    - [Productivity](#productivity)
+    - [Communication](#communication)
+    - [Analytics](#analytics)
+    - [Automation](#automation)
+  - [Configuration Guide](#configuration-guide)
+  - [How to Use](#how-to-use)
+  - [How to Contribute](#how-to-contribute)
+  - [Schema Validation](#schema-validation)
+  - [License](#license)
 
 ## Available Services
 
@@ -34,37 +43,37 @@ A collection of Model Context Protocol (MCP) service configurations for quick se
 
 - [Chrome Automation](https://github.com/JackZhao98/chrome-automation-mcp) - Chrome Automation MCP powered by Playwright
 
-## 配置说明
+## Configuration Guide
 
-每个服务的配置遵循以下格式：
+Each service configuration follows this format:
 
-\`\`\`json
+```json
 {
-"id": "服务唯一标识",
-"name": "服务名称",
-"category": "服务类别",
-"description": "服务描述",
-"author": "作者",
-"tags": ["标签 1", "标签 2"],
-"config": [
-{
-"key": "配置键",
-"value": "配置值",
-"is_user_fill": "是否需要用户填写",
-"fill_fields": [
-{
-"input_type": "输入类型",
-"out_type": "输出类型",
-"replace_placehold": "替换占位符",
-"desc": "描述",
-"doc": "文档链接",
-"placeholder": "示例值"
+  "id": "service-identifier",
+  "name": "Service Name",
+  "category": "Service Category",
+  "description": "Service Description",
+  "author": "Author",
+  "tags": ["tag1", "tag2"],
+  "config": [
+    {
+      "key": "config-key",
+      "value": "config-value",
+      "is_user_fill": "whether-user-input-required",
+      "fill_fields": [
+        {
+          "input_type": "input-type",
+          "out_type": "output-type",
+          "replace_placehold": "placeholder-to-replace",
+          "desc": "description",
+          "doc": "documentation-url",
+          "placeholder": "example-value"
+        }
+      ]
+    }
+  ]
 }
-]
-}
-]
-}
-\`\`\`
+```
 
 ## How to Use
 

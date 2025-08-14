@@ -34,6 +34,7 @@ A collection of Model Context Protocol (MCP) service configurations for quick se
 ### Communication
 
 - [Slack](https://github.com/korotovsky/slack-mcp-server) - A powerful Slack MCP server with multiple transport methods, DMs, and smart history fetch logic
+- [Zoom MCP Server](https://github.com/javaprogrammerlb/zoom-mcp-server) - A Model Context Protocol server for integrating with Zoom video conferencing platform
 
 ### Analytics
 
@@ -55,6 +56,7 @@ Each service configuration follows this format:
   "description": "Service Description",
   "author": "Author",
   "tags": ["tag1", "tag2"],
+  "homepage": "https://example.com",
   "config": [
     {
       "key": "config-key",

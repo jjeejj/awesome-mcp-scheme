@@ -25,6 +25,7 @@
 ### 通信
 
 - [Slack](https://github.com/korotovsky/slack-mcp-server) - 功能强大的 Slack MCP 服务器，支持多种传输方式、DMs 和智能历史记录获取
+- [Zoom MCP Server](https://github.com/javaprogrammerlb/zoom-mcp-server) - 用于与 Zoom 视频会议平台集成的 Model Context Protocol 服务器
 
 ### 分析
 
@@ -46,6 +47,7 @@
   "description": "服务描述",
   "author": "作者",
   "tags": ["标签1", "标签2"],
+  "homepage": "https://example.com",
   "config": [
     {
       "key": "配置键",

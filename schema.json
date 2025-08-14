@@ -10,6 +10,7 @@
             "description",
             "author",
             "tags",
+            "homepage",
             "config"
         ],
         "properties": {
@@ -39,6 +40,11 @@
                     "type": "string"
                 },
                 "description": "Keywords that describe the MCP scheme's functionality"
+            },
+            "homepage": {
+                "type": "string",
+                "description": "The homepage URL of the MCP",
+                "format": "uri"
             },
             "config": {
                 "type": "array",

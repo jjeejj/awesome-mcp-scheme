@@ -14,6 +14,8 @@ A collection of Model Context Protocol (MCP) service configurations for quick se
     - [Communication](#communication)
     - [Analytics](#analytics)
     - [Automation](#automation)
+    - [Design](#design)
+    - [Deployment](#deployment)
   - [Configuration Guide](#configuration-guide)
   - [How to Use](#how-to-use)
   - [How to Contribute](#how-to-contribute)
@@ -34,7 +36,6 @@ A collection of Model Context Protocol (MCP) service configurations for quick se
 ### Communication
 
 - [Slack](https://github.com/korotovsky/slack-mcp-server) - A powerful Slack MCP server with multiple transport methods, DMs, and smart history fetch logic
-- [Zoom MCP Server](https://github.com/javaprogrammerlb/zoom-mcp-server) - A Model Context Protocol server for integrating with Zoom video conferencing platform
 
 ### Analytics
 
@@ -47,6 +48,10 @@ A collection of Model Context Protocol (MCP) service configurations for quick se
 ### Design
 
 - [Framelink Figma MCP](https://github.com/GLips/Figma-Context-MCP) - MCP server to provide Figma layout information to AI coding agents like Cursor
+
+### Deployment
+
+- [Netlify MCP](https://github.com/netlify/netlify-mcp) - A Model Context Protocol server for integrating with Netlify deployment platform
 
 ## Configuration Guide
 

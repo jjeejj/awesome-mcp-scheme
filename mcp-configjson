@@ -364,7 +364,7 @@
                         "replace_placehold": "${ZOOM_ACCOUNT_ID}",
                         "desc": "Zoom Account ID for authentication",
                         "doc": "https://github.com/javaprogrammerlb/zoom-mcp-server#2-steps-to-play-with-zoom-mcp-server",
-                        "placeholder": "$ZOOM_ACCOUNT_ID$"
+                        "placeholder": "ZOOM_ACCOUNT_ID"
                     },
                     {
                         "input_type": "text",
@@ -372,7 +372,7 @@
                         "replace_placehold": "${ZOOM_CLIENT_ID}",
                         "desc": "Zoom Client ID for authentication",
                         "doc": "https://github.com/javaprogrammerlb/zoom-mcp-server#2-steps-to-play-with-zoom-mcp-server",
-                        "placeholder": "$ZOOM_CLIENT_ID$"
+                        "placeholder": "ZOOM_CLIENT_ID"
                     },
                     {
                         "input_type": "password",
@@ -380,7 +380,7 @@
                         "replace_placehold": "${ZOOM_CLIENT_SECRET}",
                         "desc": "Zoom Client Secret for authentication",
                         "doc": "https://github.com/javaprogrammerlb/zoom-mcp-server#2-steps-to-play-with-zoom-mcp-server",
-                        "placeholder": "$ZOOM_CLIENT_SECRET$"
+                        "placeholder": "ZOOM_CLIENT_SECRET"
                     }
                 ]
             }

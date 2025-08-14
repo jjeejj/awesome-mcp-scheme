@@ -14,8 +14,8 @@ A collection of Model Context Protocol (MCP) service configurations for quick se
     - [Communication](#communication)
     - [Analytics](#analytics)
     - [Automation](#automation)
-    - [Design](#design)
     - [Deployment](#deployment)
+    - [Monitoring](#monitoring)
   - [Configuration Guide](#configuration-guide)
   - [How to Use](#how-to-use)
   - [How to Contribute](#how-to-contribute)
@@ -45,13 +45,13 @@ A collection of Model Context Protocol (MCP) service configurations for quick se
 
 - [Chrome Automation](https://github.com/JackZhao98/chrome-automation-mcp) - Chrome Automation MCP powered by Playwright
 
-### Design
-
-- [Framelink Figma MCP](https://github.com/GLips/Figma-Context-MCP) - MCP server to provide Figma layout information to AI coding agents like Cursor
-
 ### Deployment
 
 - [Netlify MCP](https://github.com/netlify/netlify-mcp) - A Model Context Protocol server for integrating with Netlify deployment platform
+
+### Monitoring
+
+- [Sentry](https://github.com/getsentry/sentry-mcp) - A Model Context Protocol server for integrating with Sentry error tracking platform
 
 ## Configuration Guide
 

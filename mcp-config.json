@@ -487,5 +487,68 @@
                 "fill_fields": []
             }
         ]
+    },
+    {
+        "id": "sentry-mcp",
+        "name": "Sentry",
+        "category": "Monitoring",
+        "description": "A Model Context Protocol server for integrating with Sentry error tracking platform, allowing AI agents to monitor and analyze application errors and performance issues.",
+        "author": "Sentry",
+        "tags": [
+            "monitoring",
+            "sentry",
+            "error-tracking",
+            "performance",
+            "debugging"
+        ],
+        "homepage": "https://github.com/getsentry/sentry-mcp",
+        "config": [
+            {
+                "key": "command",
+                "value": "npx",
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "args",
+                "value": [
+                    "@sentry/mcp-server@latest"
+                ],
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "enabled",
+                "value": true,
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "env",
+                "value": {
+                    "SENTRY_ACCESS_TOKEN": "$SENTRY_ACCESS_TOKEN$",
+                    "SENTRY_HOST": "$SENTRY_HOST$"
+                },
+                "is_user_fill": true,
+                "fill_fields": [
+                    {
+                        "input_type": "password",
+                        "out_type": "string",
+                        "replace_placehold": "$SENTRY_ACCESS_TOKEN$",
+                        "desc": "Sentry Access Token",
+                        "doc": "https://docs.sentry.io/product/sentry-mcp/#local-stdio-mode",
+                        "placeholder": "SENTRY_ACCESS_TOKEN"
+                    },
+                    {
+                        "input_type": "text",
+                        "out_type": "string",
+                        "replace_placehold": "$SENTRY_HOST$",
+                        "desc": "Sentry Host",
+                        "doc": "https://docs.sentry.io/product/sentry-mcp/#local-stdio-mode",
+                        "placeholder": "sentry.io or your custom Sentry instance"
+                    }
+                ]
+            }
+        ]
     }
 ]

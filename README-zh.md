@@ -34,13 +34,13 @@
 
 - [Chrome Automation](https://github.com/JackZhao98/chrome-automation-mcp) - 基于 Playwright 的 Chrome 自动化 MCP 服务
 
-### 设计
-
-- [Framelink Figma MCP](https://github.com/GLips/Figma-Context-MCP) - 为 Cursor 等 AI 编码代理提供 Figma 布局信息的 MCP 服务器
-
 ### 部署
 
-- [Netlify MCP](https://github.com/netlify/netlify-mcp) - 用于与 Netlify 部署平台集成的 Model Context Protocol 服务器
+- [Netlify MCP](https://github.com/netlify/netlify-mcp) - 用于与 Netlify 部署平台集成的模型上下文协议服务器
+
+### 监控
+
+- [Sentry](https://github.com/getsentry/sentry-mcp) - 用于与 Sentry 错误跟踪平台集成的模型上下文协议服务器
 
 ## 配置说明
 

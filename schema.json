@@ -1,0 +1,134 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "required": [
+            "id",
+            "name",
+            "category",
+            "description",
+            "author",
+            "tags",
+            "config"
+        ],
+        "properties": {
+            "id": {
+                "type": "string",
+                "description": "The unique identifier of the MCP scheme"
+            },
+            "name": {
+                "type": "string",
+                "description": "The display name of the MCP scheme"
+            },
+            "category": {
+                "type": "string",
+                "description": "The category of the MCP scheme"
+            },
+            "description": {
+                "type": "string",
+                "description": "A detailed description of what the MCP scheme does"
+            },
+            "author": {
+                "type": "string",
+                "description": "The author or organization that created the MCP scheme"
+            },
+            "tags": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                },
+                "description": "Keywords that describe the MCP scheme's functionality"
+            },
+            "config": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "required": [
+                        "key",
+                        "value",
+                        "is_user_fill"
+                    ],
+                    "properties": {
+                        "key": {
+                            "type": "string",
+                            "description": "Configuration key",
+                            "enum": [
+                                "command",
+                                "args",
+                                "env",
+                                "enabled"
+                            ]
+                        },
+                        "value": {
+                            "description": "Configuration value",
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "array"
+                                },
+                                {
+                                    "type": "object"
+                                },
+                                {
+                                    "type": "boolean"
+                                }
+                            ]
+                        },
+                        "is_user_fill": {
+                            "type": "boolean",
+                            "description": "Whether this configuration requires user input"
+                        },
+                        "fill_fields": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "input_type": {
+                                        "type": "string",
+                                        "enum": [
+                                            "text",
+                                            "password"
+                                        ],
+                                        "description": "Type of input field"
+                                    },
+                                    "out_type": {
+                                        "type": "string",
+                                        "enum": [
+                                            "string"
+                                        ],
+                                        "description": "Output type of the field"
+                                    },
+                                    "replace_placehold": {
+                                        "type": "string",
+                                        "description": "Placeholder to be replaced in the configuration"
+                                    },
+                                    "desc": {
+                                        "type": "string",
+                                        "description": "Description of the field"
+                                    },
+                                    "doc": {
+                                        "type": "string",
+                                        "description": "Documentation URL for the field"
+                                    },
+                                    "placeholder": {
+                                        "type": "string",
+                                        "description": "Example value for the field"
+                                    }
+                                },
+                                "required": [
+                                    "input_type",
+                                    "out_type",
+                                    "replace_placehold",
+                                    "desc"
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

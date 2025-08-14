@@ -15,25 +15,29 @@
 
 ### 文件系统
 
-- [Server Filesystem](https://github.com/modelcontextprotocol/server-filesystem) - 提供文件系统访问能力的服务
+- [Server Filesystem](https://github.com/modelcontextprotocol/server-filesystem) - 服务器文件系统服务，提供文件系统访问功能
 
 ### 生产力工具
 
-- [Notion](https://github.com/makenotion/notion-mcp-server) - 连接 Notion 工作区，用于读写页面、数据库和块
-- [Google Workspace](https://github.com/taylorwilsdon/google_workspace_mcp) - 用于读写 Google 文档、表格和演示文稿
+- [Notion](https://github.com/makenotion/notion-mcp-server) - 连接到 Notion 工作区，用于读取和写入页面、数据库和块
+- [Google Workspace](https://github.com/taylorwilsdon/google_workspace_mcp) - 用于读取和写入 Google 文档、电子表格和演示文稿
 
-### 通信
+### 通讯
 
-- [Slack](https://github.com/korotovsky/slack-mcp-server) - 功能强大的 Slack MCP 服务器，支持多种传输方式、DMs 和智能历史记录获取
+- [Slack](https://github.com/korotovsky/slack-mcp-server) - 功能强大的 Slack MCP 服务器，支持多种传输方式、私信和智能历史获取逻辑
 - [Zoom MCP Server](https://github.com/javaprogrammerlb/zoom-mcp-server) - 用于与 Zoom 视频会议平台集成的 Model Context Protocol 服务器
 
 ### 分析
 
-- [Google Analytics](https://github.com/surendranb/google-analytics-mcp) - 连接 Google Analytics，用于读写事件、用户属性和自定义维度指标
+- [Google Analytics](https://github.com/surendranb/google-analytics-mcp) - 连接到 Google Analytics，用于读取和写入事件、用户属性和指标
 
 ### 自动化
 
-- [Chrome Automation](https://github.com/JackZhao98/chrome-automation-mcp) - 基于 Playwright 的 Chrome 自动化 MCP 服务
+- [Chrome Automation](https://github.com/JackZhao98/chrome-automation-mcp) - 基于 Playwright 的 Chrome 自动化 MCP
+
+### 设计
+
+- [Framelink Figma MCP](https://github.com/GLips/Figma-Context-MCP) - 为 Cursor 等 AI 编码代理提供 Figma 布局信息的 MCP 服务器
 
 ## 配置说明
 
@@ -47,7 +51,6 @@
   "description": "服务描述",
   "author": "作者",
   "tags": ["标签1", "标签2"],
-  "homepage": "https://example.com",
   "config": [
     {
       "key": "配置键",

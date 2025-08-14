@@ -44,6 +44,10 @@ A collection of Model Context Protocol (MCP) service configurations for quick se
 
 - [Chrome Automation](https://github.com/JackZhao98/chrome-automation-mcp) - Chrome Automation MCP powered by Playwright
 
+### Design
+
+- [Framelink Figma MCP](https://github.com/GLips/Figma-Context-MCP) - MCP server to provide Figma layout information to AI coding agents like Cursor
+
 ## Configuration Guide
 
 Each service configuration follows this format:
@@ -56,7 +60,6 @@ Each service configuration follows this format:
   "description": "Service Description",
   "author": "Author",
   "tags": ["tag1", "tag2"],
-  "homepage": "https://example.com",
   "config": [
     {
       "key": "config-key",

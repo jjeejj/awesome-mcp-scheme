@@ -1,0 +1,319 @@
+[
+    {
+        "id": "server-filesystem",
+        "name": "Server Filesystem",
+        "category": "Filesystem",
+        "description": "A server filesystem service that provides file system access capabilities",
+        "author": "ModelContextProtocol",
+        "tags": [
+            "filesystem",
+            "files",
+            "storage"
+        ],
+        "config": [
+            {
+                "key": "command",
+                "value": "npx",
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "args",
+                "value": [
+                    "-y",
+                    "@modelcontextprotocol/server-filesystem",
+                    "$file_path$"
+                ],
+                "is_user_fill": true,
+                "fill_fields": [
+                    {
+                        "input_type": "text",
+                        "out_type": "string",
+                        "replace_placehold": "$file_path$",
+                        "desc": "File system path",
+                        "doc": "The root directory path that the filesystem server will have access to",
+                        "placeholder": "/Users/username/Documents"
+                    }
+                ]
+            },
+            {
+                "key": "env",
+                "value": {},
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "enabled",
+                "value": true,
+                "is_user_fill": false,
+                "fill_fields": []
+            }
+        ]
+    },
+    {
+        "id": "notion-api",
+        "name": "Notion",
+        "category": "Productivity",
+        "description": "Connect to Notion workspace for reading and writing pages, databases, and blocks through the Notion API",
+        "author": "Notion",
+        "tags": [
+            "productivity",
+            "notion",
+            "workspace",
+            "database"
+        ],
+        "config": [
+            {
+                "key": "command",
+                "value": "npx",
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "args",
+                "value": [
+                    "-y",
+                    "@notionhq/notion-mcp-server"
+                ],
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "enabled",
+                "value": true,
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "env",
+                "value": {
+                    "OPENAPI_MCP_HEADERS": "{\"Authorization\": \"Bearer $NOTION_TOKEN$\",\"Notion-Version\": \"2022-06-28\"}"
+                },
+                "is_user_fill": true,
+                "fill_fields": [
+                    {
+                        "input_type": "password",
+                        "out_type": "string",
+                        "replace_placehold": "$NOTION_TOKEN$",
+                        "desc": "Notion Integration Token",
+                        "doc": "https://github.com/makenotion/notion-mcp-server#installation",
+                        "placeholder": "NOTION_TOKEN"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "slack-mcp-server",
+        "name": "Slack",
+        "category": "Communication",
+        "description": "The most powerful MCP Slack Server with no permission requirements, Apps support, multiple transports Stdio and SSE, DMs, Group DMs and smart history fetch logic.",
+        "author": "korotovsky",
+        "tags": [
+            "communication",
+            "slack",
+            "messaging",
+            "collaboration",
+            "team"
+        ],
+        "config": [
+            {
+                "key": "command",
+                "value": "npx",
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "args",
+                "value": [
+                    "-y",
+                    "slack-mcp-server@latest",
+                    "--transport",
+                    "stdio"
+                ],
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "enabled",
+                "value": true,
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "env",
+                "value": {
+                    "SLACK_MCP_XOXP_TOKEN": "$SLACK_MCP_XOXP_TOKEN$",
+                    "SLACK_MCP_ADD_MESSAGE_TOOL": true
+                },
+                "is_user_fill": true,
+                "fill_fields": [
+                    {
+                        "input_type": "password",
+                        "out_type": "string",
+                        "replace_placehold": "$SLACK_MCP_XOXP_TOKEN$",
+                        "desc": "SLACK XOXP/XOXB Token",
+                        "doc": "https://github.com/korotovsky/slack-mcp-server/blob/master/docs/01-authentication-setup.md#alternative-using-slack_mcp_xoxp_token-user-oauth",
+                        "placeholder": "SLACK XOXP/XOXB Token"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ga4-mcp-server",
+        "name": "Google Analytics",
+        "category": "Analytics",
+        "description": "Connect to Google Analytics for reading and writing events, user properties, and custom dimensions and metrics.\nhttps://github.com/surendranb/google-analytics-mcp#test-your-setup-optional",
+        "author": "surendranb",
+        "tags": [
+            "analytics",
+            "google",
+            "ga4",
+            "events",
+            "user properties"
+        ],
+        "config": [
+            {
+                "key": "command",
+                "value": "ga4-mcp-server",
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "args",
+                "value": [],
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "enabled",
+                "value": true,
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "env",
+                "value": {
+                    "GOOGLE_APPLICATION_CREDENTIALS": "$GOOGLE_APPLICATION_CREDENTIALS_PATH$",
+                    "GA4_PROPERTY_ID": "$GA4_PROPERTY_ID$"
+                },
+                "is_user_fill": true,
+                "fill_fields": [
+                    {
+                        "input_type": "text",
+                        "out_type": "string",
+                        "replace_placehold": "$GOOGLE_APPLICATION_CREDENTIALS_PATH$",
+                        "desc": "google application credentials json path",
+                        "doc": "https://github.com/surendranb/google-analytics-mcp#create-service-account-in-google-cloud-console",
+                        "placeholder": "google application credentials json path"
+                    },
+                    {
+                        "input_type": "text",
+                        "out_type": "string",
+                        "replace_placehold": "$GA4_PROPERTY_ID$",
+                        "desc": "ga4 property id",
+                        "doc": "https://github.com/surendranb/google-analytics-mcp#find-your-ga4-property-id",
+                        "placeholder": "ga4 property id"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "google-workspace",
+        "name": "Google Workspace",
+        "category": "Productivity",
+        "description": "Connect to Google Workspace for reading and writing documents, spreadsheets, and presentations.\nhttps://github.com/taylorwilsdon/google_workspace_mcp",
+        "author": "taylorwilsdon",
+        "tags": [
+            "productivity",
+            "google",
+            "workspace",
+            "documents"
+        ],
+        "config": [
+            {
+                "key": "command",
+                "value": "uvx",
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "args",
+                "value": [
+                    "workspace-mcp"
+                ],
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "enabled",
+                "value": true,
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "env",
+                "value": {
+                    "GOOGLE_OAUTH_CLIENT_ID": "$GOOGLE_OAUTH_CLIENT_ID$",
+                    "GOOGLE_OAUTH_CLIENT_SECRET": "$GOOGLE_OAUTH_CLIENT_SECRET$",
+                    "USER_GOOGLE_EMAIL": "$USER_GOOGLE_EMAIL$"
+                },
+                "is_user_fill": true,
+                "fill_fields": [
+                    {
+                        "input_type": "text",
+                        "out_type": "string",
+                        "replace_placehold": "$GOOGLE_OAUTH_CLIENT_ID$",
+                        "desc": "OAuth client ID from Google Cloud (used by both legacy auth and OAuth 2.1)",
+                        "doc": "https://github.com/taylorwilsdon/google_workspace_mcp#configuration",
+                        "placeholder": "GOOGLE_OAUTH_CLIENT_ID"
+                    },
+                    {
+                        "input_type": "text",
+                        "out_type": "string",
+                        "replace_placehold": "$GOOGLE_OAUTH_CLIENT_SECRET$",
+                        "desc": "OAuth client secret (used by both legacy auth and OAuth 2.1)",
+                        "doc": "https://github.com/taylorwilsdon/google_workspace_mcp#configuration",
+                        "placeholder": "GOOGLE_OAUTH_CLIENT_SECRET"
+                    },
+                    {
+                        "input_type": "text",
+                        "out_type": "string",
+                        "replace_placehold": "$USER_GOOGLE_EMAIL$",
+                        "desc": "Default email for single-user auth",
+                        "doc": "https://github.com/taylorwilsdon/google_workspace_mcp#configuration",
+                        "placeholder": "USER_GOOGLE_EMAIL"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "chrome-automation",
+        "name": "Chrome Automation",
+        "category": "Automation",
+        "description": "Chrome Automation MCP powered by Playwright.\nhttps://github.com/JackZhao98/chrome-automation-mcp",
+        "author": "JackZhao98",
+        "tags": [
+            "automation",
+            "chrome",
+            "playwright"
+        ],
+        "config": [
+            {
+                "key": "command",
+                "value": "chrome-automation-mcp-lite",
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "enabled",
+                "value": true,
+                "is_user_fill": false,
+                "fill_fields": []
+            }
+        ]
+    }
+]

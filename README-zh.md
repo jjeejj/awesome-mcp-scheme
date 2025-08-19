@@ -25,6 +25,7 @@
 ### 通信
 
 - [Slack](https://github.com/korotovsky/slack-mcp-server) - 功能强大的 Slack MCP 服务器，支持多种传输方式、DMs 和智能历史记录获取
+- [Calendly](https://github.com/meAmitPatil/calendly-mcp-server) - 用于与 Calendly 预约平台集成的模型上下文协议服务器
 
 ### 分析
 

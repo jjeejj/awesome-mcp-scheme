@@ -36,6 +36,7 @@ A collection of Model Context Protocol (MCP) service configurations for quick se
 ### Communication
 
 - [Slack](https://github.com/korotovsky/slack-mcp-server) - A powerful Slack MCP server with multiple transport methods, DMs, and smart history fetch logic
+- [Calendly](https://github.com/meAmitPatil/calendly-mcp-serve) - A Model Context Protocol server for integrating with Calendly scheduling platform
 
 ### Analytics
 

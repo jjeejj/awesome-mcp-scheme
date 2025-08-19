@@ -536,7 +536,7 @@
                         "out_type": "string",
                         "replace_placehold": "$SENTRY_ACCESS_TOKEN$",
                         "desc": "Sentry Access Token",
-                        "doc": "https://docs.sentry.io/product/sentry-mcp/#local-stdio-mode",
+                        "doc": "https://docs.sentry.io/product/mcp-server/#authentication",
                         "placeholder": "SENTRY_ACCESS_TOKEN"
                     },
                     {
@@ -544,8 +544,62 @@
                         "out_type": "string",
                         "replace_placehold": "$SENTRY_HOST$",
                         "desc": "Sentry Host",
-                        "doc": "https://docs.sentry.io/product/sentry-mcp/#local-stdio-mode",
+                        "doc": "https://docs.sentry.io/product/mcp-server/#configuration",
                         "placeholder": "sentry.io or your custom Sentry instance"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "calendly-mcp",
+        "name": "Calendly",
+        "category": "Communication",
+        "description": "A Model Context Protocol server for integrating with Calendly.",
+        "author": "meAmitPatil",
+        "tags": [
+            "monitoring",
+            "sentry",
+            "error-tracking",
+            "performance",
+            "debugging"
+        ],
+        "homepage": "https://github.com/meAmitPatil/calendly-mcp-server",
+        "config": [
+            {
+                "key": "command",
+                "value": "npx",
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "args",
+                "value": [
+                    "calendly-mcp-server"
+                ],
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "enabled",
+                "value": true,
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "env",
+                "value": {
+                    "CALENDLY_API_KEY": "$CALENDLY_API_KEY$"
+                },
+                "is_user_fill": true,
+                "fill_fields": [
+                    {
+                        "input_type": "password",
+                        "out_type": "string",
+                        "replace_placehold": "$CALENDLY_API_KEY$",
+                        "desc": "CALENDLY API KEY",
+                        "doc": "https://github.com/meAmitPatil/calendly-mcp-server?tab=readme-ov-file#option-1-personal-access-token-pat",
+                        "placeholder": "CALENDLY_API_KEY"
                     }
                 ]
             }

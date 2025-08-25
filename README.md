@@ -16,6 +16,7 @@ A collection of Model Context Protocol (MCP) service configurations for quick se
     - [Automation](#automation)
     - [Deployment](#deployment)
     - [Monitoring](#monitoring)
+    - [Database](#database)
   - [Configuration Guide](#configuration-guide)
   - [How to Use](#how-to-use)
   - [How to Contribute](#how-to-contribute)
@@ -53,6 +54,10 @@ A collection of Model Context Protocol (MCP) service configurations for quick se
 ### Monitoring
 
 - [Sentry](https://github.com/getsentry/sentry-mcp) - A Model Context Protocol server for integrating with Sentry error tracking platform
+
+### Database
+
+- [Redis](https://github.com/redis/mcp-redis) - The official Redis MCP Server is a natural language interface designed for agentic applications to manage and search data in Redis efficiently
 
 ## Configuration Guide
 

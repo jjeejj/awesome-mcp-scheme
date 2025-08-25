@@ -43,6 +43,10 @@
 
 - [Sentry](https://github.com/getsentry/sentry-mcp) - 用于与 Sentry 错误跟踪平台集成的模型上下文协议服务器
 
+### 数据库
+
+- [Redis](https://github.com/redis/mcp-redis) - 官方 Redis MCP 服务器，为智能代理应用设计的自然语言接口，可高效地管理和搜索 Redis 中的数据
+
 ## 配置说明
 
 每个服务的配置遵循以下格式：

@@ -603,5 +603,86 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "redis-mcp",
+        "name": "Redis",
+        "category": "Database",
+        "description": "The official Redis MCP Server is a natural language interface designed for agentic applications to manage and search data in Redis efficiently.",
+        "author": "Redis",
+        "tags": [
+            "database",
+            "redis",
+            "cache",
+            "key-value"
+        ],
+        "homepage": "https://github.com/redis/mcp-redis",
+        "config": [
+            {
+                "key": "command",
+                "value": "uvx",
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "args",
+                "value": [
+                    "--from",
+                    "git+https://github.com/redis/mcp-redis.git",
+                    "redis-mcp-server"
+                ],
+                "is_user_fill": false
+            },
+            {
+                "key": "env",
+                "value": {
+                    "REDIS_HOST": "$REDIS_HOST$",
+                    "REDIS_PORT": "$REDIS_PORT$",
+                    "REDIS_DB": "$REDIS_DB$",
+                    "REDIS_PWD": "$REDIS_PWD$"
+                },
+                "is_user_fill": true,
+                "fill_fields": [
+                    {
+                        "input_type": "text",
+                        "out_type": "string",
+                        "replace_placehold": "$REDIS_HOST$",
+                        "desc": "Redis host",
+                        "doc": "https://github.com/redis/mcp-redis#configuration-via-command-line-arguments",
+                        "placeholder": "localhost"
+                    },
+                    {
+                        "input_type": "text",
+                        "out_type": "string",
+                        "replace_placehold": "$REDIS_PORT$",
+                        "desc": "Redis port",
+                        "doc": "https://github.com/redis/mcp-redis#configuration-via-command-line-arguments",
+                        "placeholder": "6379"
+                    },
+                    {
+                        "input_type": "text",
+                        "out_type": "string",
+                        "replace_placehold": "$REDIS_DB$",
+                        "desc": "Redis database number",
+                        "doc": "https://github.com/redis/mcp-redis#configuration-via-command-line-arguments",
+                        "placeholder": "0"
+                    },
+                    {
+                        "input_type": "password",
+                        "out_type": "string",
+                        "replace_placehold": "$REDIS_PWD$",
+                        "desc": "Redis password",
+                        "doc": "https://github.com/redis/mcp-redis#configuration-via-environment-variables",
+                        "placeholder": "REDIS_PWD"
+                    }
+                ]
+            },
+            {
+                "key": "enabled",
+                "value": true,
+                "is_user_fill": false,
+                "fill_fields": []
+            }
+        ]
     }
 ]

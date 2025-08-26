@@ -47,6 +47,10 @@
 
 - [Redis](https://github.com/redis/mcp-redis) - 官方 Redis MCP 服务器，为智能代理应用设计的自然语言接口，可高效地管理和搜索 Redis 中的数据
 
+### 支付
+
+- [Stripe MCP](https://docs.stripe.com/mcp) - 让 AI 代理与 Stripe API 交互。包括管理客户、产品、价格、发票、支付等工具。
+
 ## 配置说明
 
 每个服务的配置遵循以下格式：

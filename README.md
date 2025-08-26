@@ -17,6 +17,7 @@ A collection of Model Context Protocol (MCP) service configurations for quick se
     - [Deployment](#deployment)
     - [Monitoring](#monitoring)
     - [Database](#database)
+    - [Payment](#payment)
   - [Configuration Guide](#configuration-guide)
   - [How to Use](#how-to-use)
   - [How to Contribute](#how-to-contribute)
@@ -58,6 +59,10 @@ A collection of Model Context Protocol (MCP) service configurations for quick se
 ### Database
 
 - [Redis](https://github.com/redis/mcp-redis) - The official Redis MCP Server is a natural language interface designed for agentic applications to manage and search data in Redis efficiently
+
+### Payment
+
+- [Stripe MCP](https://docs.stripe.com/mcp) - Let your AI agents interact with the Stripe API. Includes tools for managing customers, products, prices, invoices, payments and more.
 
 ## Configuration Guide
 

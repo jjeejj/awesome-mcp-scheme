@@ -684,5 +684,60 @@
                 "fill_fields": []
             }
         ]
+    },
+    {
+        "id": "stripe-mcp",
+        "name": "Stripe MCP",
+        "category": "Payment",
+        "description": "Let your AI agents interact with the Stripe API by using Stripe's MCP server. Includes tools for managing customers, products, prices, invoices, payments and more.",
+        "author": "Stripe",
+        "homepage": "https://docs.stripe.com/mcp",
+        "tags": [
+            "payment",
+            "stripe",
+            "billing",
+            "ecommerce",
+            "finance"
+        ],
+        "config": [
+            {
+                "key": "command",
+                "value": "npx",
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "args",
+                "value": [
+                    "-y",
+                    "@stripe/mcp",
+                    "--tools=all"
+                ],
+                "is_user_fill": false
+            },
+            {
+                "key": "env",
+                "value": {
+                    "STRIPE_SECRET_KEY": "$STRIPE_SECRET_KEY$"
+                },
+                "is_user_fill": true,
+                "fill_fields": [
+                    {
+                        "input_type": "password",
+                        "out_type": "string",
+                        "replace_placehold": "$STRIPE_SECRET_KEY$",
+                        "desc": "Stripe Secret Key",
+                        "doc": "https://docs.stripe.com/keys#create-restricted-api-secret-key",
+                        "placeholder": "Stripe Secret Key"
+                    }
+                ]
+            },
+            {
+                "key": "enabled",
+                "value": true,
+                "is_user_fill": false,
+                "fill_fields": []
+            }
+        ]
     }
 ]

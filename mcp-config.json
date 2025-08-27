@@ -52,6 +52,61 @@
         ]
     },
     {
+        "id": "hubspot-mcp-server",
+        "name": "HubSpot MCP Server",
+        "category": "CRM",
+        "description": "HubSpot's MCP server enables AI clients to seamlessly take HubSpot actions and interact with your HubSpot data. This opens up powerful new integration possibilities for the ecosystem.",
+        "author": "HubSpot",
+        "homepage": "https://www.npmjs.com/package/@hubspot/mcp-server",
+        "tags": [
+            "crm",
+            "hubspot",
+            "sales",
+            "marketing",
+            "customer"
+        ],
+        "config": [
+            {
+                "key": "command",
+                "value": "npx",
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "args",
+                "value": [
+                    "-y",
+                    "@hubspot/mcp-server"
+                ],
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "enabled",
+                "value": true,
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "env",
+                "value": {
+                    "PRIVATE_APP_ACCESS_TOKEN": "$PRIVATE_APP_ACCESS_TOKEN$"
+                },
+                "is_user_fill": true,
+                "fill_fields": [
+                    {
+                        "input_type": "password",
+                        "out_type": "string",
+                        "replace_placehold": "$PRIVATE_APP_ACCESS_TOKEN$",
+                        "desc": "HubSpot Private App Access Token",
+                        "doc": "https://www.npmjs.com/package/@hubspot/mcp-server#Pre-requisites",
+                        "placeholder": "PRIVATE_APP_ACCESS_TOKEN"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "id": "notion-api",
         "name": "Notion",
         "category": "Productivity",

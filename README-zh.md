@@ -51,6 +51,10 @@
 
 - [Stripe MCP](https://docs.stripe.com/mcp) - 让 AI 代理与 Stripe API 交互。包括管理客户、产品、价格、发票、支付等工具。
 
+### CRM
+
+- [HubSpot MCP Server](https://www.npmjs.com/package/@hubspot/mcp-server) - HubSpot 的 MCP 服务器，使 AI 客户端能够无缝执行 HubSpot 操作并与您的 HubSpot 数据交互
+
 ## 配置说明
 
 每个服务的配置遵循以下格式：

@@ -64,6 +64,10 @@ A collection of Model Context Protocol (MCP) service configurations for quick se
 
 - [Stripe MCP](https://docs.stripe.com/mcp) - Let your AI agents interact with the Stripe API. Includes tools for managing customers, products, prices, invoices, payments and more.
 
+### CRM
+
+- [HubSpot MCP Server](https://www.npmjs.com/package/@hubspot/mcp-server) - HubSpot's MCP server enables AI clients to seamlessly take HubSpot actions and interact with your HubSpot data
+
 ## Configuration Guide
 
 Each service configuration follows this format:

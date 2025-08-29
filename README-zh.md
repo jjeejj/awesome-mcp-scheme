@@ -59,6 +59,10 @@
 
 - [IPinfo Geolocation](https://github.com/briandconnelly/mcp-server-ipinfo) - 使用 ipinfo.io API 获取 IP 地址详细信息的模型上下文协议服务器
 
+### 实用工具
+
+- [Time Server](https://github.com/modelcontextprotocol/servers/tree/main/src/time) - 提供当前时间信息的模型上下文协议服务器
+
 ## 配置说明
 
 每个服务的配置遵循以下格式：

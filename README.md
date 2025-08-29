@@ -19,6 +19,7 @@ A collection of Model Context Protocol (MCP) service configurations for quick se
     - [Database](#database)
     - [Payment](#payment)
     - [Network](#network)
+    - [Utilities](#utilities)
   - [Configuration Guide](#configuration-guide)
   - [How to Use](#how-to-use)
   - [How to Contribute](#how-to-contribute)
@@ -72,6 +73,10 @@ A collection of Model Context Protocol (MCP) service configurations for quick se
 ### Network
 
 - [IPinfo Geolocation](https://github.com/briandconnelly/mcp-server-ipinfo) - A Model Context Protocol server that uses the ipinfo.io API to get detailed information about an IP address
+
+### Utilities
+
+- [Time Server](https://github.com/modelcontextprotocol/servers/tree/main/src/time) - A Model Context Protocol server that provides current time information
 
 ## Configuration Guide
 

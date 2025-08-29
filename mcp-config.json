@@ -847,5 +847,41 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "mcp-server-time",
+        "name": "Time Server",
+        "category": "Utilities",
+        "description": "A Model Context Protocol server that provides current time information. Allows AI agents to access real-time information for time-based operations and scheduling.",
+        "author": "ModelContextProtocol",
+        "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/time",
+        "tags": [
+            "utilities",
+            "time",
+            "clock",
+            "datetime"
+        ],
+        "config": [
+            {
+                "key": "command",
+                "value": "uvx",
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "args",
+                "value": [
+                    "mcp-server-time"
+                ],
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "enabled",
+                "value": true,
+                "is_user_fill": false,
+                "fill_fields": []
+            }
+        ]
     }
 ]

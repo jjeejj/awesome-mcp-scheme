@@ -55,6 +55,10 @@
 
 - [HubSpot MCP Server](https://www.npmjs.com/package/@hubspot/mcp-server) - HubSpot 的 MCP 服务器，使 AI 客户端能够无缝执行 HubSpot 操作并与您的 HubSpot 数据交互
 
+### 网络
+
+- [IPinfo Geolocation](https://github.com/briandconnelly/mcp-server-ipinfo) - 使用 ipinfo.io API 获取 IP 地址详细信息的模型上下文协议服务器
+
 ## 配置说明
 
 每个服务的配置遵循以下格式：

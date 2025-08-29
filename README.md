@@ -18,6 +18,7 @@ A collection of Model Context Protocol (MCP) service configurations for quick se
     - [Monitoring](#monitoring)
     - [Database](#database)
     - [Payment](#payment)
+    - [Network](#network)
   - [Configuration Guide](#configuration-guide)
   - [How to Use](#how-to-use)
   - [How to Contribute](#how-to-contribute)
@@ -67,6 +68,10 @@ A collection of Model Context Protocol (MCP) service configurations for quick se
 ### CRM
 
 - [HubSpot MCP Server](https://www.npmjs.com/package/@hubspot/mcp-server) - HubSpot's MCP server enables AI clients to seamlessly take HubSpot actions and interact with your HubSpot data
+
+### Network
+
+- [IPinfo Geolocation](https://github.com/briandconnelly/mcp-server-ipinfo) - A Model Context Protocol server that uses the ipinfo.io API to get detailed information about an IP address
 
 ## Configuration Guide
 

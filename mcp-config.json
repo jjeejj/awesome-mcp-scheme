@@ -794,5 +794,58 @@
                 "fill_fields": []
             }
         ]
+    },
+    {
+        "id": "ipinfo-mcp-server",
+        "name": "IPinfo Geolocation",
+        "category": "Network",
+        "description": "A Model Context Protocol server that uses the ipinfo.io API to get detailed information about an IP address. This can be used to determine where the user is located (approximately) and what network they are using.",
+        "author": "briandconnelly",
+        "homepage": "https://github.com/briandconnelly/mcp-server-ipinfo",
+        "tags": [
+            "network",
+            "ip",
+            "geolocation",
+            "ipinfo"
+        ],
+        "config": [
+            {
+                "key": "command",
+                "value": "uvx",
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "args",
+                "value": [
+                    "mcp-server-ipinfo"
+                ],
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "enabled",
+                "value": true,
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "env",
+                "value": {
+                    "IPINFO_API_TOKEN": "$IPINFO_API_TOKEN$"
+                },
+                "is_user_fill": true,
+                "fill_fields": [
+                    {
+                        "input_type": "password",
+                        "out_type": "string",
+                        "replace_placehold": "$IPINFO_API_TOKEN$",
+                        "desc": "IPInfo API Token",
+                        "doc": "https://ipinfo.io/dashboard/token",
+                        "placeholder": "YOUR_IPINFO_API_TOKEN"
+                    }
+                ]
+            }
+        ]
     }
 ]

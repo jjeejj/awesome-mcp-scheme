@@ -14,12 +14,14 @@ A collection of Model Context Protocol (MCP) service configurations for quick se
     - [Communication](#communication)
     - [Analytics](#analytics)
     - [Automation](#automation)
+    - [Design](#design)
     - [Deployment](#deployment)
     - [Monitoring](#monitoring)
     - [Database](#database)
     - [Payment](#payment)
     - [Network](#network)
     - [Utilities](#utilities)
+    - [Visualization](#visualization)
   - [Configuration Guide](#configuration-guide)
   - [How to Use](#how-to-use)
   - [How to Contribute](#how-to-contribute)
@@ -30,7 +32,7 @@ A collection of Model Context Protocol (MCP) service configurations for quick se
 
 ### Filesystem
 
-- [Server Filesystem](https://github.com/modelcontextprotocol/server-filesystem) - A server filesystem service that provides file system access capabilities
+- [Server Filesystem](https://www.npmjs.com/package/@modelcontextprotocol/server-filesystem) - A server filesystem service that provides file system access capabilities
 
 ### Productivity
 
@@ -39,8 +41,9 @@ A collection of Model Context Protocol (MCP) service configurations for quick se
 
 ### Communication
 
-- [Slack](https://github.com/korotovsky/slack-mcp-server) - A powerful Slack MCP server with multiple transport methods, DMs, and smart history fetch logic
-- [Calendly](https://github.com/meAmitPatil/calendly-mcp-serve) - A Model Context Protocol server for integrating with Calendly scheduling platform
+- [Slack](https://github.com/korotovsky/slack-mcp-server/) - A powerful Slack MCP server with multiple transport methods, DMs, and smart history fetch logic
+- [Zoom MCP Server](https://github.com/javaprogrammerlb/zoom-mcp-server) - A Model Context Protocol server for interacting with Zoom
+- [Calendly](https://github.com/meAmitPatil/calendly-mcp-server) - A Model Context Protocol server for integrating with Calendly scheduling platform
 
 ### Analytics
 
@@ -50,33 +53,37 @@ A collection of Model Context Protocol (MCP) service configurations for quick se
 
 - [Chrome Automation](https://github.com/JackZhao98/chrome-automation-mcp) - Chrome Automation MCP powered by Playwright
 
+### Design
+
+- [Framelink Figma MCP](https://github.com/GLips/Figma-Context-MCP) - A Model Context Protocol server for interacting with Figma
+
 ### Deployment
 
-- [Netlify MCP](https://github.com/netlify/netlify-mcp) - A Model Context Protocol server for integrating with Netlify deployment platform
+- [Netlify MCP](https://github.com/netlify/netlify-mcp) - A Model Context Protocol server for interacting with Netlify
 
 ### Monitoring
 
-- [Sentry](https://github.com/getsentry/sentry-mcp) - A Model Context Protocol server for integrating with Sentry error tracking platform
+- [Sentry](https://github.com/getsentry/sentry-mcp) - A Model Context Protocol server for interacting with Sentry
 
 ### Database
 
-- [Redis](https://github.com/redis/mcp-redis) - The official Redis MCP Server is a natural language interface designed for agentic applications to manage and search data in Redis efficiently
+- [Redis](https://github.com/redis/mcp-redis) - A Model Context Protocol server for interacting with Redis
 
 ### Payment
 
-- [Stripe MCP](https://docs.stripe.com/mcp) - Let your AI agents interact with the Stripe API. Includes tools for managing customers, products, prices, invoices, payments and more.
-
-### CRM
-
-- [HubSpot MCP Server](https://www.npmjs.com/package/@hubspot/mcp-server) - HubSpot's MCP server enables AI clients to seamlessly take HubSpot actions and interact with your HubSpot data
+- [Stripe MCP](https://docs.stripe.com/mcp) - A Model Context Protocol server for interacting with Stripe
 
 ### Network
 
-- [IPinfo Geolocation](https://github.com/briandconnelly/mcp-server-ipinfo) - A Model Context Protocol server that uses the ipinfo.io API to get detailed information about an IP address
+- [IPinfo Geolocation](https://github.com/briandconnelly/mcp-server-ipinfo) - A Model Context Protocol server for IP address geolocation
 
 ### Utilities
 
-- [Time Server](https://github.com/modelcontextprotocol/servers/tree/main/src/time) - A Model Context Protocol server that provides current time information
+- [Time Server](https://github.com/modelcontextprotocol/servers/tree/main/src/time) - A Model Context Protocol server that provides current time information. Allows AI agents to access real-time information for time-based operations and scheduling
+
+### Visualization
+
+- [MCP ECharts](https://github.com/hustcc/mcp-echarts) - Generate visual charts using ECharts with AI MCP dynamically for chart generation and data analysis
 
 ## Configuration Guide
 

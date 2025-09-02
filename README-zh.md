@@ -12,13 +12,14 @@
   - [通信](#通信)
   - [分析](#分析)
   - [自动化](#自动化)
+  - [设计](#设计)
   - [部署](#部署)
   - [监控](#监控)
   - [数据库](#数据库)
   - [支付](#支付)
-  - [CRM](#crm)
   - [网络](#网络)
   - [实用工具](#实用工具)
+  - [可视化](#可视化)
 - [配置说明](#配置说明)
 - [如何使用](#如何使用)
 - [如何贡献](#如何贡献)
@@ -27,7 +28,7 @@
 
 ### 文件系统
 
-- [Server Filesystem](https://github.com/modelcontextprotocol/server-filesystem) - 提供文件系统访问能力的服务
+- [Server Filesystem](https://www.npmjs.com/package/@modelcontextprotocol/server-filesystem) - 提供文件系统访问能力的服务
 
 ### 生产力工具
 
@@ -36,7 +37,8 @@
 
 ### 通信
 
-- [Slack](https://github.com/korotovsky/slack-mcp-server) - 功能强大的 Slack MCP 服务器，支持多种传输方式、DMs 和智能历史记录获取
+- [Slack](https://github.com/korotovsky/slack-mcp-server/) - 功能强大的 Slack MCP 服务器，支持多种传输方式、DMs 和智能历史记录获取
+- [Zoom MCP Server](https://github.com/javaprogrammerlb/zoom-mcp-server) - 用于与 Zoom 交互的模型上下文协议服务器
 - [Calendly](https://github.com/meAmitPatil/calendly-mcp-server) - 用于与 Calendly 预约平台集成的模型上下文协议服务器
 
 ### 分析
@@ -47,33 +49,37 @@
 
 - [Chrome Automation](https://github.com/JackZhao98/chrome-automation-mcp) - 基于 Playwright 的 Chrome 自动化 MCP 服务
 
+### 设计
+
+- [Framelink Figma MCP](https://github.com/GLips/Figma-Context-MCP) - 用于与 Figma 交互的模型上下文协议服务器
+
 ### 部署
 
-- [Netlify MCP](https://github.com/netlify/netlify-mcp) - 用于与 Netlify 部署平台集成的模型上下文协议服务器
+- [Netlify MCP](https://github.com/netlify/netlify-mcp) - 用于与 Netlify 交互的模型上下文协议服务器
 
 ### 监控
 
-- [Sentry](https://github.com/getsentry/sentry-mcp) - 用于与 Sentry 错误跟踪平台集成的模型上下文协议服务器
+- [Sentry](https://github.com/getsentry/sentry-mcp) - 用于与 Sentry 交互的模型上下文协议服务器
 
 ### 数据库
 
-- [Redis](https://github.com/redis/mcp-redis) - 官方 Redis MCP 服务器，为智能代理应用设计的自然语言接口，可高效地管理和搜索 Redis 中的数据
+- [Redis](https://github.com/redis/mcp-redis) - 用于与 Redis 交互的模型上下文协议服务器
 
 ### 支付
 
-- [Stripe MCP](https://docs.stripe.com/mcp) - 让 AI 代理与 Stripe API 交互。包括管理客户、产品、价格、发票、支付等工具。
-
-### CRM
-
-- [HubSpot MCP Server](https://www.npmjs.com/package/@hubspot/mcp-server) - HubSpot 的 MCP 服务器，使 AI 客户端能够无缝执行 HubSpot 操作并与您的 HubSpot 数据交互
+- [Stripe MCP](https://docs.stripe.com/mcp) - 用于与 Stripe 交互的模型上下文协议服务器
 
 ### 网络
 
-- [IPinfo Geolocation](https://github.com/briandconnelly/mcp-server-ipinfo) - 使用 ipinfo.io API 获取 IP 地址详细信息的模型上下文协议服务器
+- [IPinfo Geolocation](https://github.com/briandconnelly/mcp-server-ipinfo) - 用于 IP 地址地理位置信息的模型上下文协议服务器
 
 ### 实用工具
 
-- [Time Server](https://github.com/modelcontextprotocol/servers/tree/main/src/time) - 提供当前时间信息的模型上下文协议服务器
+- [Time Server](https://github.com/modelcontextprotocol/servers/tree/main/src/time) - 提供当前时间信息的模型上下文协议服务器，允许 AI 代理访问实时信息以进行基于时间的操作和调度
+
+### 可视化
+
+- [MCP ECharts](https://github.com/hustcc/mcp-echarts) - 使用 ECharts 动态生成可视化图表，用于图表生成和数据分析
 
 ## 配置说明
 

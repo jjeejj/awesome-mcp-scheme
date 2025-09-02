@@ -883,5 +883,45 @@
                 "fill_fields": []
             }
         ]
+    },
+    {
+        "id": "mcp-echarts",
+        "name": "MCP ECharts",
+        "category": "Visualization",
+        "description": "Generate visual charts using ECharts with AI MCP dynamically for chart generation and data analysis",
+        "author": "hustcc",
+        "homepage": "https://github.com/hustcc/mcp-echarts",
+        "prerequisites": [
+            "node"
+        ],
+        "tags": [
+            "visualization",
+            "charts",
+            "data-analysis",
+            "echarts"
+        ],
+        "config": [
+            {
+                "key": "command",
+                "value": "npx",
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "args",
+                "value": [
+                    "-y",
+                    "mcp-echarts"
+                ],
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "enabled",
+                "value": true,
+                "is_user_fill": false,
+                "fill_fields": []
+            }
+        ]
     }
 ]

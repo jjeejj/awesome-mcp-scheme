@@ -8,8 +8,10 @@
             "name",
             "category",
             "description",
+            "long_description",
             "author",
             "tags",
+            "prerequisites",
             "config"
         ],
         "properties": {
@@ -29,6 +31,10 @@
                 "type": "string",
                 "description": "A detailed description of what the MCP scheme does"
             },
+            "long_description": {
+                "type": "string",
+                "description": "A full detailed description of what the MCP scheme does"
+            },
             "author": {
                 "type": "string",
                 "description": "The author or organization that created the MCP scheme"
@@ -39,6 +45,13 @@
                     "type": "string"
                 },
                 "description": "Keywords that describe the MCP scheme's functionality"
+            },
+            "prerequisites": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                },
+                "description": "prerequisites for the MCP scheme"
             },
             "config": {
                 "type": "array",

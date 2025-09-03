@@ -95,8 +95,12 @@ Each service configuration follows this format:
   "name": "Service Name",
   "category": "Service Category",
   "description": "Service Description",
+  "long_description": "Long Description"
   "author": "Author",
   "tags": ["tag1", "tag2"],
+  "homepage": "https://example.com",
+  "icon": "https://example.com/icon.png"
+  "prerequisites": [],
   "config": [
     {
       "key": "config-key",

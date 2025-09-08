@@ -923,5 +923,78 @@
                 "fill_fields": []
             }
         ]
+    },
+    {
+        "id": "wordpress-mcp",
+        "name": "WordPress",
+        "category": "Productivity",
+        "description": "A Model Context Protocol server for interacting with WordPress sites",
+        "author": "Automattic",
+        "homepage": "https://github.com/Automattic/wordpress-mcp",
+        "tags": [
+            "wordpress",
+            "cms",
+            "blog",
+            "content"
+        ],
+        "prerequisites": [
+            "node"
+        ],
+        "config": [
+            {
+                "key": "command",
+                "value": "npx",
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "args",
+                "value": [
+                    "-y",
+                    "@automattic/mcp-wordpress-remote@latest"
+                ],
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "env",
+                "value": {
+                    "WP_API_URL": "https://your-site.com/",
+                    "WP_API_USERNAME": "your-username",
+                    "WP_API_PASSWORD": "your-application-password"
+                },
+                "is_user_fill": true,
+                "fill_fields": [
+                    {
+                        "input_type": "text",
+                        "out_type": "string",
+                        "replace_placehold": "$WP_API_URL$",
+                        "desc": "WordPress URL",
+                        "doc": "The URL of your WordPress site",
+                        "placeholder": "https://your-site.com/"
+                    },
+                    {
+                        "input_type": "text",
+                        "out_type": "string",
+                        "replace_placehold": "$WP_API_USERNAME$",
+                        "desc": "WordPress Username",
+                        "placeholder": "your-username"
+                    },
+                    {
+                        "input_type": "password",
+                        "out_type": "string",
+                        "replace_placehold": "$WP_API_PASSWORD$",
+                        "desc": "WordPress Password",
+                        "placeholder": "your-application-password"
+                    }
+                ]
+            },
+            {
+                "key": "enabled",
+                "value": true,
+                "is_user_fill": false,
+                "fill_fields": []
+            }
+        ]
     }
 ]

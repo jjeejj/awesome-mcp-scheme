@@ -38,6 +38,7 @@ A collection of Model Context Protocol (MCP) service configurations for quick se
 
 - [Notion](https://github.com/makenotion/notion-mcp-server) - Connect to Notion workspace for reading and writing pages, databases, and blocks
 - [Google Workspace](https://github.com/taylorwilsdon/google_workspace_mcp) - For reading and writing Google documents, spreadsheets, and presentations
+- [WordPress MCP](https://github.com/Automattic/wordpress-mcp) - A Model Context Protocol server for interacting with WordPress sites
 
 ### Communication
 

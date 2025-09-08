@@ -38,6 +38,7 @@
 
 - [Notion](https://github.com/makenotion/notion-mcp-server) - 连接 Notion 工作区，用于读写页面、数据库和块
 - [Google Workspace](https://github.com/taylorwilsdon/google_workspace_mcp) - 用于读写 Google 文档、表格和演示文稿
+- [WordPress MCP](https://github.com/Automattic/wordpress-mcp) - 用于与 WordPress 网站交互的模型上下文协议服务器
 
 ### 通信
 

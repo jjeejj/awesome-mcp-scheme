@@ -996,5 +996,55 @@
                 "fill_fields": []
             }
         ]
+    },
+    {
+        "id": "fetch-mcp",
+        "name": "Fetch MCP",
+        "category": "Network",
+        "description": "A flexible HTTP fetching Model Context Protocol server that provides functionality to fetch web content in various formats",
+        "author": "zcaceres",
+        "homepage": "https://github.com/zcaceres/fetch-mcp",
+        "tags": [
+            "http",
+            "fetch",
+            "web",
+            "html",
+            "json",
+            "markdown",
+            "text"
+        ],
+        "prerequisites": [
+            "node"
+        ],
+        "config": [
+            {
+                "key": "command",
+                "value": "npx",
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "args",
+                "value": [
+                    "mcp-fetch-server"
+                ],
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "env",
+                "value": {
+                    "DEFAULT_LIMIT": "50000"
+                },
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "enabled",
+                "value": true,
+                "is_user_fill": false,
+                "fill_fields": []
+            }
+        ]
     }
 ]

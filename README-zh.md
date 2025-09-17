@@ -76,6 +76,7 @@
 
 ### 网络
 
+- [Fetch MCP](https://github.com/zcaceres/fetch-mcp) - 一个灵活的 HTTP 获取模型上下文协议服务器，提供以各种格式获取网页内容的功能
 - [IPinfo Geolocation](https://github.com/briandconnelly/mcp-server-ipinfo) - 用于 IP 地址地理位置信息的模型上下文协议服务器
 
 ### 实用工具

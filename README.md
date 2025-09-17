@@ -76,6 +76,7 @@ A collection of Model Context Protocol (MCP) service configurations for quick se
 
 ### Network
 
+- [Fetch MCP](https://github.com/zcaceres/fetch-mcp) - A flexible HTTP fetching Model Context Protocol server that provides functionality to fetch web content in various formats
 - [IPinfo Geolocation](https://github.com/briandconnelly/mcp-server-ipinfo) - A Model Context Protocol server for IP address geolocation
 
 ### Utilities

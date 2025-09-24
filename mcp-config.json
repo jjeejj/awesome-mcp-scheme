@@ -925,6 +925,75 @@
         ]
     },
     {
+        "id": "mcp-veo3",
+        "name": "Veo 3 Video Generation",
+        "category": "Utilities",
+        "description": "A Model Context Protocol (MCP) server that provides video generation capabilities using Google's Veo 3 API through the Gemini API. Generate high-quality videos from text prompts or images with realistic motion and audio.",
+        "author": "dayongd1",
+        "homepage": "https://github.com/dayongd1/mcp-veo3",
+        "tags": [
+            "video",
+            "generation",
+            "ai",
+            "gemini",
+            "veo3",
+            "multimedia"
+        ],
+        "prerequisites": [
+            "python",
+            "uv"
+        ],
+        "config": [
+            {
+                "key": "command",
+                "value": "uvx",
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "args",
+                "value": [
+                    "mcp-veo3",
+                    "--output-dir",
+                    "$OUTPUT_DIR$"
+                ],
+                "is_user_fill": true,
+                "fill_fields": [
+                    {
+                        "input_type": "folder",
+                        "out_type": "string",
+                        "replace_placehold": "$OUTPUT_DIR$",
+                        "desc": "Output Directory",
+                        "placeholder": "/path/to/output/directory"
+                    }
+                ]
+            },
+            {
+                "key": "env",
+                "value": {
+                    "GEMINI_API_KEY": "$GEMINI_API_KEY$"
+                },
+                "is_user_fill": true,
+                "fill_fields": [
+                    {
+                        "input_type": "password",
+                        "out_type": "string",
+                        "replace_placehold": "$GEMINI_API_KEY$",
+                        "desc": "Gemini API Key",
+                        "doc": "Get your Gemini API key from Google AI Studio",
+                        "placeholder": "your_gemini_api_key_here"
+                    }
+                ]
+            },
+            {
+                "key": "enabled",
+                "value": true,
+                "is_user_fill": false,
+                "fill_fields": []
+            }
+        ]
+    },
+    {
         "id": "wordpress-mcp",
         "name": "WordPress",
         "category": "Productivity",

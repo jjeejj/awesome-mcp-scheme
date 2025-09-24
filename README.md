@@ -82,6 +82,7 @@ A collection of Model Context Protocol (MCP) service configurations for quick se
 ### Utilities
 
 - [Time Server](https://github.com/modelcontextprotocol/servers/tree/main/src/time) - A Model Context Protocol server that provides current time information. Allows AI agents to access real-time information for time-based operations and scheduling
+- [Veo 3 Video Generation](https://github.com/dayongd1/mcp-veo3) - A Model Context Protocol (MCP) server that provides video generation capabilities using Google's Veo 3 API through the Gemini API. Generate high-quality videos from text prompts or images with realistic motion and audio.
 
 ### Visualization
 

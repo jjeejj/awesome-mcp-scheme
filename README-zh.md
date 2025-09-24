@@ -82,6 +82,7 @@
 ### 实用工具
 
 - [Time Server](https://github.com/modelcontextprotocol/servers/tree/main/src/time) - 提供当前时间信息的模型上下文协议服务器，允许 AI 代理访问实时信息以进行基于时间的操作和调度
+- [Veo 3 Video Generation](https://github.com/dayongd1/mcp-veo3) - 一个通过 Gemini API 使用 Google Veo 3 API 提供视频生成功能的模型上下文协议服务器。可以从文本提示或图像生成高质量的视频，并具有逼真的运动和音频。
 
 ### 可视化
 

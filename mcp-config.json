@@ -1115,5 +1115,49 @@
                 "fill_fields": []
             }
         ]
+    },
+    {
+        "id": "agent-payment-node",
+        "name": "Agent Payment Node",
+        "category": "Payment",
+        "description": "Local CLI and stdio MCP payment tools for AI agents on Apple Silicon macOS.",
+        "long_description": "Inspect x402 offers, prepare bounded payment actions, and inspect status and receipts through the local APN runtime. Requires Apple Silicon macOS and Node.js 24; install separately with brew install nuanu-ai/tap/apn. Disabled by default: enable only after installing and reviewing the software. Spending requires owner-set limits and approval or an applicable owner-admitted policy; direct transfers and EVM signing require foreground owner approval. Wallet setup and any provider authentication are separate owner tasks. Free software; network and provider fees are separate.",
+        "author": "Nuanu AI",
+        "tags": [
+            "payments",
+            "x402",
+            "mcp",
+            "macos",
+            "local"
+        ],
+        "homepage": "https://github.com/nuanu-ai/agent-payment-node",
+        "prerequisites": [
+            "Apple Silicon macOS (arm64); Linux, Windows and Intel macOS are not supported.",
+            "Node.js 24 and Homebrew; install APN with brew install nuanu-ai/tap/apn.",
+            "Review APN and opt in before enabling; wallet setup/limits and foreground approvals remain owner tasks."
+        ],
+        "config": [
+            {
+                "key": "command",
+                "value": "apn",
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "args",
+                "value": [
+                    "mcp",
+                    "serve"
+                ],
+                "is_user_fill": false,
+                "fill_fields": []
+            },
+            {
+                "key": "enabled",
+                "value": false,
+                "is_user_fill": false,
+                "fill_fields": []
+            }
+        ]
     }
 ]

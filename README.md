@@ -72,6 +72,8 @@ A collection of Model Context Protocol (MCP) service configurations for quick se
 
 ### Payment
 
+- [Agent Payment Node](https://github.com/nuanu-ai/agent-payment-node) - Local CLI and stdio MCP payment tools for Apple Silicon macOS/Node.js 24; install APN separately, enable explicitly, and retain owner approval and limits for spending.
+
 - [Stripe MCP](https://docs.stripe.com/mcp) - A Model Context Protocol server for interacting with Stripe
 
 ### Network

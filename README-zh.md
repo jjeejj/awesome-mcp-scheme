@@ -72,6 +72,8 @@
 
 ### 支付
 
+- [Agent Payment Node](https://github.com/nuanu-ai/agent-payment-node) - 面向 AI Agent 的本地 CLI 与 stdio MCP 支付工具，仅支持 Apple Silicon macOS 与 Node.js 24；需先单独安装并主动启用，资金操作仍受所有者限额与审批约束。
+
 - [Stripe MCP](https://docs.stripe.com/mcp) - 用于与 Stripe 交互的模型上下文协议服务器
 
 ### 网络
